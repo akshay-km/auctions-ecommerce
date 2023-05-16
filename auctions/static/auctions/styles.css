@@ -1,0 +1,234 @@
+body {
+    padding: 10px;
+    min-width: 460px;
+    
+}
+
+img {
+    width: 100%;
+    height:100%;
+}
+
+.listing {
+    border: 1px solid grey;
+    height: min-content;
+    width: 100%;
+    margin: 5px auto;
+    display:flex;
+    flex-wrap: wrap;
+
+    
+
+}
+
+.listing_image {
+    width:50%;
+    min-width: 400px;
+    height: 400px;
+    padding: 5px;   
+    overflow: hidden;
+    position: relative;
+}
+
+.listing_image img{
+    min-width: 100%;
+    position: absolute;
+    object-fit: none;
+}
+
+.noimage{
+    width:100%;
+    min-width: inherit;
+    height: 390px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text {
+    margin-left:10%;
+    margin-top: auto;
+    margin-bottom:auto;
+}
+
+.created {
+    color: grey;
+    font-size: small;
+}
+
+.labeltext{
+    display: inline-block;
+    width : 100px;
+    margin: 5px 0px auto 0px;
+}
+
+label[for="id_description"]{
+    margin-top: 2px;
+    margin-bottom: auto;
+}
+
+.createform {
+    margin-left: 50px;
+    width: 100%;
+}
+
+.wrapper {
+    width: 600px;
+}
+
+input , select, textarea {
+    width: 80%;
+}
+
+.save {
+    width : fit-content;
+    float: right;
+    margin-right: 14px;
+}
+
+
+.catlist {
+    margin-top: 10px;
+}
+
+.header {
+    background-color: rgb(53, 77, 59);
+    color: white;
+    padding-left: 5px;
+    margin-bottom: 40px;
+}
+
+.link {
+    width: 20%;
+    color: lightblue;
+}
+.link a {
+    color: lightblue;
+}
+.linkwrap {
+    display: flex;
+    flex: wrap;
+    text-align: center; 
+}
+
+h1 {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.signedin {
+    margin-left: auto;
+    margin-right: 90px;
+    text-align: right;
+}
+
+.nothing {
+    margin: 50px auto auto auto;
+    text-align: center;
+}
+
+.backtocat {
+    display: block;
+    margin-right: 10px;
+    text-align: right;
+
+}
+
+.listingitem {
+    height: min-content;
+    width: 100%;
+    margin: 5px auto;
+    display: flex;
+    
+
+    
+
+}
+
+.listingitem_image{
+    width:50%;
+    min-width: 400px;
+    height: 400px;
+    padding: 5px;   
+
+}
+
+
+.listingtext {
+    margin-left:10%;
+    margin-top: 20px;
+    margin-bottom:auto;
+}
+
+.listingtitle {
+    padding-bottom:30px;
+}
+
+.listingdesc {
+    padding-bottom: 10px;
+    width: 80%;
+}
+
+.listingprice{
+    padding-top: 30px;
+}
+
+.bidinput {
+
+    display: inline-block;
+    width: 315px;
+    margin-right: 5px;
+}
+
+.bidinput input{
+ width: inherit;   
+}
+.bid , .watchlist{
+   width: fit-content;
+    padding: 2px 8px;
+
+}
+
+.error {
+    padding: 3px;
+    margin-top: 5px;
+}
+
+.watchlist {
+ margin-top: 20px;
+}
+
+
+.commentwrapper{
+    display: flex;
+    margin-left: 15%;
+    margin-top: 10px;
+    
+}
+
+.commenter {
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(53, 77, 59);
+    width:60px;
+}
+.commenttext {
+    display: inline-block;
+    color:rgb(138, 136, 136);
+    font-style: italic;
+
+    
+}
+
+.commenttext input {
+    width: 800px;
+    margin-right: 5px;
+}
+.empty{
+    font-style: italic ; 
+    margin-top: 10px;
+    font-size: 20px;
+    color:rgb(138, 136, 136);
+}

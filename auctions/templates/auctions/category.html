@@ -1,0 +1,32 @@
+{% extends 'auctions/layout.html' %}
+{% block body %}
+
+<div>
+    <h2>Category: {{item}}</h2>
+    <a class="backtocat" href="{% url 'categories' %}">All Categories</a>
+</div>
+{% for listing in auction_listings %}
+    <div class="listing"> 
+        <div class="listing_image">
+            {% if listing.image_path %}
+                <img src={{listing.image_path}} alt={{listing.title}}>
+            {% else %}
+                <div class="noimage">
+                    <h5>NO IMAGE</h5>
+                </div>
+            {% endif %}
+        </div>
+        <div class="text">
+            <a href="{% url 'listing' listing.pk %}"><h3>{{listing.title}}</h3></a>
+            <p class="description">{{listing.description}}</p>
+            <h5>Price: ${{listing.price}}</h5>
+            <p class="created">Created at {{listing.time_stamp}}</p>
+        </div>
+    </div>
+{% empty %} 
+    <div class="nothing">
+        <h6 id="nonecat">Currently, there are no active listings present in this category.</h6>  
+        <p>To see list of all categories, click <a href="{% url 'categories' %}">here</a>.</p>
+    </div>
+{% endfor %}
+{% endblock %}
