@@ -1,6 +1,7 @@
 # auctions-ecommerce
 An e-commerce auction site that will allow users to post auction listings, place bids on listings, comment on those listings, and add listings to a watchlist. This is a personal project build using Django framework making use of Django html templates.
-
+## Demo Video
+ [Youtube link](https://youtu.be/d6mgscjVAQU)
 ## Specifications
 ### Listing Creation
 - Users can visit a page to create a new listing.
